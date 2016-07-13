@@ -1,5 +1,5 @@
 <?php
-namespace IniConfigurator;
+namespace SonsuratExtre\Utils\IniConfigurator;
 
 use Exception;
 
@@ -63,12 +63,9 @@ class ConfWriter extends IniConfigurator
      */
     public function write($data = [])
     {
-        if (!is_writable($this->file)) {
-            throw new Exception("Given Ini file is not writable!");
-        }
         $this->confData = $data;
         $iniStr = $this->sections ? $this->generateIniWithSections() : $this->generateIniWithoutSections();
-        $result = file_put_contents($this->getFile(), $iniStr);
+        $result = file_put_contents($this->getFile(), $iniStr, FILE_APPEND);
         if ($result === false || (is_int($result) && $result < 1)) {
             throw new Exception("Error writing configuration to file: " . $this->file);
         }

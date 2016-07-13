@@ -1,5 +1,5 @@
 <?php
-namespace IniConfigurator;
+namespace SonsuratExtre\Utils\IniConfigurator;
 
 /**
  * Class IniConfigurator
@@ -8,6 +8,9 @@ namespace IniConfigurator;
  */
 class IniConfigurator
 {
+    const ENABLE_SECTIONS = true;
+    const DISABLE_SECTIONS = false;
+
     /**
      * @var null|string ini file location
      */
