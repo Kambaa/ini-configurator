@@ -1,5 +1,5 @@
 <?php
-namespace SonsuratExtre\Utils\IniConfigurator;
+namespace IniConfigurator;
 
 use Exception;
 

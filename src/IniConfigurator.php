@@ -1,5 +1,5 @@
 <?php
-namespace SonsuratExtre\Utils\IniConfigurator;
+namespace IniConfigurator;
 
 /**
  * Class IniConfigurator
