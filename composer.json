@@ -1,0 +1,12 @@
+{
+  "name": "Kambaa/ini-configurator",
+  "description": "A basic ini configuration file reader/writer.",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Yusuf Gündüz",
+      "email": "yusuf.gunduz@gmail.com"
+    }
+  ]
+}
